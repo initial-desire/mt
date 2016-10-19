@@ -1,4 +1,4 @@
-package cn.qishizhijia.mt.service;
+package cn.qishizhijia.mt.service.Impl;
 
 import java.util.List;
 
@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import cn.qishizhijia.mt.dao.TestDao;
 import cn.qishizhijia.mt.pojo.MtStaff;
+
 
 @Service
 @RunWith(SpringJUnit4ClassRunner.class)  
@@ -28,6 +29,7 @@ public class TestService {
 	
 	@Test
 	public void ttt(){
+	
 		List<MtStaff> list = testDao.queryStaffList();
 		for (MtStaff s : list) {
 			System.out.println("...@"+s.getStaffName());
